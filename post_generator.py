@@ -30,7 +30,11 @@ def get_prompt(length, language, tag):
     3) Language: {language}
     If Language is Hinglish then it means it is a mix of Hindi and English. 
     The script for the generated post should always be English.
+    If Language is Tinglish then it means it is a mix of Telugu and English. 
+    If Language is Hindi then it means it is Hindi .
+    if Language is Telugu tehn it means it is Telugu . 
     '''
+    
     # prompt = prompt.format(post_topic=tag, post_length=length_str, post_language=language)
 
     examples = few_shot.get_filtered_posts(length, language, tag)
